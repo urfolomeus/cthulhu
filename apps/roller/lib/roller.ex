@@ -1,18 +1,16 @@
 defmodule Roller do
   @moduledoc """
-  Documentation for Roller.
+  Responsible for making dice roles.
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Roller.hello
-      :world
-
+  Rolls the given dice. Returns an integer.
   """
-  def hello do
-    :world
+  def roll("d" <> die) do
+    roll_dice(String.to_integer(die))
+  end
+
+  defp roll_dice(die) do
+    :rand.uniform(die)
   end
 end
