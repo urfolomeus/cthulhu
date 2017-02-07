@@ -1,4 +1,8 @@
 defmodule RollerTest do
+  @moduledoc """
+  Tests for the Roller module
+  """
+
   use ExUnit.Case
 
   import Roller
