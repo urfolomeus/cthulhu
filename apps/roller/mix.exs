@@ -19,6 +19,8 @@ defmodule Roller.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:stubr, "~> 1.5.0", only: :test}
+    ]
   end
 end

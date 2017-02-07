@@ -1,2 +1,3 @@
 %{"bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], []},
-  "credo": {:hex, :credo, "0.6.1", "a941e2591bd2bd2055dc92b810c174650b40b8290459c89a835af9d59ac4a5f8", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, optional: false]}]}}
+  "credo": {:hex, :credo, "0.6.1", "a941e2591bd2bd2055dc92b810c174650b40b8290459c89a835af9d59ac4a5f8", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, optional: false]}]},
+  "stubr": {:hex, :stubr, "1.5.0", "68752582482a4af06b88bd718d652026ac4216508e7097c4aae7b924c4b9bc4d", [:mix], []}}
