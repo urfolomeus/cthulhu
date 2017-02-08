@@ -19,6 +19,10 @@ The following are features currently implemented:
 * Roll multiple d100
 * Roll with modifiers
 
+### Interface
+
+* Slack bot
+
 
 ## Roadmap
 
@@ -34,7 +38,6 @@ The following are features that may be developed in future (not an exhaustive li
 
 ### Interface
 
-* Slack bot
 * Web interface
 * Facebook Messenger
 * SMS
