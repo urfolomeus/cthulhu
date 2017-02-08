@@ -2,13 +2,10 @@
 
 Cthulhu is an application that helps with the character side of things in a game of Chaosium's Call of Cthulhu RPG.
 
+
 ## Features
 
 The following are features currently implemented:
-
-## Roadmap
-
-The following are features that may be developed in future (not an exhaustive list):
 
 ### Rolling
 
@@ -21,17 +18,24 @@ The following are features that may be developed in future (not an exhaustive li
 * Roll multiple d20
 * Roll multiple d100
 * Roll with modifiers
-* Re-rolling
+
+
+## Roadmap
+
+The following are features that may be developed in future (not an exhaustive list):
+
+### Rolling
+
+* Roll against attribute (requires character sheet)
+* Roll against skill (requires character sheet)
 * Bonus dice
 * Penalty dice
 * Opposed rolls
-* Roll against attribute (requires character sheet)
-* Roll against skill (requires character sheet)
 
 ### Interface
 
-* Web interface
 * Slack bot
+* Web interface
 * Facebook Messenger
 * SMS
 
