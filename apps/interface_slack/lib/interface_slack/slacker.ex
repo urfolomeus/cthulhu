@@ -1,7 +1,8 @@
-defmodule InterfaceSlack do
+defmodule InterfaceSlack.Slacker do
   @moduledoc """
-  Documentation for InterfaceSlack.
+  Slack bot interface for the Cthulhu application.
   """
+
   use Slack
 
   @spec handle_connect(function, function) :: tuple
@@ -17,7 +18,6 @@ defmodule InterfaceSlack do
     {:ok, state}
   end
   def handle_event(message = %{type: "message"}, slack, state) do
-    IO.inspect message
     send_message("Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!", message.channel, slack)
     {:ok, state}
   end

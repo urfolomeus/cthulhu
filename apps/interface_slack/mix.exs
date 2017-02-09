@@ -17,13 +17,12 @@ defmodule InterfaceSlack.Mixfile do
   end
 
   def application do
-    [extra_applications: [:logger, :slack]]
+    [extra_applications: [:logger, :slack],
+     mod: {InterfaceSlack.Application, []}]
   end
 
-  def deps do
-    [
-      {:roller, in_umbrella: true},
-      {:slack, "~> 0.9.3"}
-    ]
+  defp deps do
+    [{:roller, in_umbrella: true},
+     {:slack, "~> 0.9.3"}]
   end
 end
