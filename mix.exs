@@ -1,6 +1,8 @@
 defmodule Cthulhu.Mixfile do
   use Mix.Project
 
+  @moduledoc false
+
   def project do
     [apps_path: "apps",
      build_embedded: Mix.env == :prod,
@@ -9,8 +11,6 @@ defmodule Cthulhu.Mixfile do
   end
 
   defp deps do
-    [
-      {:credo, "~> 0.5", only: [:dev, :test]}
-    ]
+    [{:credo, "~> 0.5", only: [:dev, :test]}]
   end
 end
