@@ -11,6 +11,7 @@ defmodule Cthulhu.Mixfile do
   end
 
   defp deps do
-    [{:credo, "~> 0.5", only: [:dev, :test]}]
+    [{:credo, "~> 0.5", only: [:dev, :test]},
+     {:distillery, "~> 1.0"}]
   end
 end

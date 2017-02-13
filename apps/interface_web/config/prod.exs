@@ -13,8 +13,10 @@ use Mix.Config
 # which you typically run after static files are built.
 config :interface_web, InterfaceWeb.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/manifest.json"
+  url: [host: "madmonk.io", port: {:system, "PORT"}],
+  cache_static_manifest: "priv/static/manifest.json",
+  root: ".",
+  version: Mix.Project.config[:version]
 
 # Do not print debug messages in production
 config :logger, level: :info
