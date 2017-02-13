@@ -1,0 +1,30 @@
+.dockerignore
+.gitignore
+.git
+.log
+.credo
+tmp
+
+# docker directory with Dockerfiles and scripts
+docker
+
+# Mix artifacts
+_build
+deps
+*.ez
+
+# directory that contains the releases
+releases
+
+# dump files
+erl_crash.dump
+
+# Phoenix static artifacts
+apps/**/node_modules
+# TODO: add this line once an asset pipeline is in place
+# apps/**/priv
+
+# any other directories that have files that don't need to be included in the build
+# these are specific to the sample project
+docs
+*.todo

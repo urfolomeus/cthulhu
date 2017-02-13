@@ -17,6 +17,13 @@ Tests for the all applications can be run by running `mix test` in the umbrella 
 We use [Credo](http://github.com/rrene/credo) for linting. You can run the Credo linter by running `mix credo`. We default to strict mode.
 
 
+## Deployment
+
+We use Docker and Distillery to generate releases. All you need to do to setup deploys is adjust `deploy/deploy.sh` to point to your server, ensuring that the user you specified for SSH has SSH privileges on that server.
+
+To deploy, run: `./deploy/deploy.sh`
+
+
 ## Running
 
 To run locally, run `iex -S mix`.
