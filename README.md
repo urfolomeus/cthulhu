@@ -3,6 +3,25 @@
 Cthulhu is an application that helps with the character side of things in a game of Chaosium's Call of Cthulhu RPG.
 
 
+## Setup
+
+Once you've cloned the project, run `mix do deps.get deps.compile`. You can check that everything is working by running the tests.
+
+We use an environment variable called `SLACK_API_TOKEN` in dev and test environments to set the API token for the Slack Bot. This is because we use Travis as a CI server and it's easier to use env vars for these things. However when we build a release for production we use the **config/prod.secret.exs** file instead. Get the Slack API token and put it in both places.
+
+
+## Tests
+
+Tests for the all applications can be run by running `mix test` in the umbrella root. Individual application tests can be run by going to the app's root directory and running `mix test`.
+
+We use [Credo](http://github.com/rrene/credo) for linting. You can run the Credo linter by running `mix credo`. We default to strict mode.
+
+
+## Running
+
+To run locally, run `iex -S mix`.
+
+
 ## Features
 
 The following are features currently implemented:
