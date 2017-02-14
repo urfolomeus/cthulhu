@@ -38,7 +38,7 @@ end
 # will be used by default
 
 release :cthulhu do
-  set version: "0.1.0"
+  set version: current_version(:cthulhu)
   set output_dir: './releases/cthulhu'
   set applications: [
     interface_slack: :permanent,
