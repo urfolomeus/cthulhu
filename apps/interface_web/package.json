@@ -1,0 +1,25 @@
+{
+  "name": "interface_web",
+  "version": "0.0.1",
+  "description": "The web interface for the Cthulhu app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "webpack --watch-stdin --progress --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/urfolomeus/cthulhu.git"
+  },
+  "author": "Alan Gardner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urfolomeus/cthulhu/issues"
+  },
+  "homepage": "https://github.com/urfolomeus/cthulhu#readme",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
