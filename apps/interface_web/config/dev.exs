@@ -11,7 +11,7 @@ config :interface_web, InterfaceWeb.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: []
+  watchers: [npm: ["start", "--prefix=./apps/interface_web"]]
 
 # Watch static and templates for browser reloading.
 config :interface_web, InterfaceWeb.Endpoint,
