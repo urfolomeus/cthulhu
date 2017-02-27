@@ -1,4 +1,4 @@
-defmodule InterfaceWeb.LandingController do
+defmodule InterfaceWeb.RootController do
   use InterfaceWeb.Web, :controller
 
   @moduledoc false

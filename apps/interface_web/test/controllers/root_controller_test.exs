@@ -1,4 +1,4 @@
-defmodule InterfaceWeb.LandingControllerTest do
+defmodule InterfaceWeb.RootControllerTest do
   use InterfaceWeb.ConnCase
 
   @moduledoc false

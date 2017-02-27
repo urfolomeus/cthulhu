@@ -16,7 +16,7 @@ defmodule InterfaceWeb.Router do
   scope "/", InterfaceWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/", LandingController, :index
+    get "/", RootController, :index
   end
 
   # Other scopes may use custom stacks.
