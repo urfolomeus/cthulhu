@@ -1,8 +1,0 @@
-.standard-font {
-  font-family: Georgia, serif;
-}
-
-.header {
-  composes: standard-font;
-  color: darkred;
-}
