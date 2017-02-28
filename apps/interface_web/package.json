@@ -10,6 +10,7 @@
     "eslint": "eslint --ext .jsx --ext .js ./web/static/js",
     "start": "webpack --watch-stdin --progress --color",
     "mocha": "mocha --opts './test/js/setup/mocha.opts' 'web/static/js/**/*_test.js'",
+    "test": "npm run eslint && npm run mocha",
     "test:watch": "npm run mocha -- --watch"
   },
   "repository": {
