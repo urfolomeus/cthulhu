@@ -13,7 +13,7 @@ describe('<Header />', () => {
   })
 
   it('has a logo', () => {
-    expect(wrapper).to.have.descendants('img[data-logo]')
+    expect(wrapper).to.have.exactly(1).descendants('img[data-logo]')
   })
 
   it('has header text', () => {
