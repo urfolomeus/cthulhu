@@ -6,7 +6,7 @@ import cthulhuLogo from '../../../assets/images/cthulhu-white.svg'
 const Header = () =>
   <header className={styles.header}>
     <div className={styles.headerWrapper}>
-      <img src={cthulhuLogo} className={styles.icon} data-logo />
+      <img src={cthulhuLogo} className={styles.icon} data-logo alt="Mad Monk logo" />
       <h1 className={styles.headerText} data-header-text>Mad Monk</h1>
     </div>
   </header>
