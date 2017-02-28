@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack --watch-stdin --progress --color",
-    "mocha": "mocha 'web/static/js/**/*_test.js'"
+    "mocha": "mocha --opts './test/js/setup/mocha.opts' 'web/static/js/**/*_test.js'"
   },
   "repository": {
     "type": "git",
