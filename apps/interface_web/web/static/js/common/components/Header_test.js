@@ -1,8 +1,7 @@
-var chai = require('chai'),
-    expect = chai.expect
+import { expect } from 'chai'
 
-describe('<Header />', function () {
-  it('is true', function () {
+describe('<Header />', () => {
+  it('is true', () => {
     expect(true).to.be.true
   })
 })
