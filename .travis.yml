@@ -4,5 +4,8 @@ elixir:
 otp_release:
   - 19.1
 script:
-  - mix test
-  - mix credo
+  - MIX_ENV=test mix do test, credo
+  - cd apps/interface_web
+  - nvm install 6.4.0
+  - npm install
+  - npm run test
