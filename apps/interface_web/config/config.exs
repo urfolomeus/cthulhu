@@ -1,15 +1,30 @@
+# This file is responsible for configuring your application
+# and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :interface_web, InterfaceWeb.Endpoint,
-  url: [host: "localhost"],
-  secret_key_base: "6IY5TrQxxO8DDp3T7t25w6Ss+eiAJ1U8u5027KfgqmtIXCKD+CWL2bh2WVuBdvCq",
-  render_errors: [view: InterfaceWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: InterfaceWeb.PubSub,
-           adapter: Phoenix.PubSub.PG2],
-  server: true
+# This configuration is loaded before any dependency and is restricted
+# to this project. If another project depends on this project, this
+# file won't be loaded nor affect the parent project. For this reason,
+# if you want to provide default values for your application for
+# 3rd-party users, it should be done in your "mix.exs" file.
 
-config :logger, :console,
-  format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+# You can configure your application as:
+#
+#     config :interface_web, key: :value
+#
+# and access this configuration in your application as:
+#
+#     Application.get_env(:interface_web, :key)
+#
+# You can also configure a 3rd-party app:
+#
+#     config :logger, level: :info
+#
 
-import_config "#{Mix.env}.exs"
+# It is also possible to import configuration files, relative to this
+# directory. For example, you can emulate configuration per environment
+# by uncommenting the line below and defining dev.exs, test.exs and such.
+# Configuration from the imported file will override the ones defined
+# here (which is why it is important to import them last).
+#
+#     import_config "#{Mix.env}.exs"

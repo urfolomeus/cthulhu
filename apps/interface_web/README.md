@@ -1,23 +1,21 @@
 # InterfaceWeb
 
-Web interface for Cthulhu.
+**TODO: Add description**
 
-## Setup
+## Installation
 
-Install dependencies with `mix deps.get`
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+by adding `interface_web` to your list of dependencies in `mix.exs`:
 
-## Testing
+```elixir
+def deps do
+  [
+    {:interface_web, "~> 0.1.0"}
+  ]
+end
+```
 
-Run `mix test` either in the root of this application or in the root of the umbrella app.
+Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
+and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
+be found at [https://hexdocs.pm/interface_web](https://hexdocs.pm/interface_web).
 
-Run `mix credo` to lint the project.
-
-## Running
-
-To start the Phoenix app run `mix phoenix.server` or `iex -S mix phoenix.server`.
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-## Deploying
-
-This application is deployed as part of the whole umbrella app.

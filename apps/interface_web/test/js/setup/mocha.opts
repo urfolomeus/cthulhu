@@ -1,4 +1,0 @@
---compilers js:babel-register
---reporter dot
---require test/js/setup
---watch-extensions js,jsx
